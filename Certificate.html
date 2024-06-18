@@ -13,7 +13,6 @@
             display: none;
         }
 
-        /* 新添加的样式用于放大效果 */
         .active .top{
             transform: scale(1.3);
             z-index: 1;
@@ -50,7 +49,6 @@
         <h2>證照</h2>
 
         <div class="carousel">
-            <!-- Certificate block divs -->
             <div class="Certificate" id="block1" onclick="moveBlocks()">
                 <a href="#">
                     <div class="top">
@@ -170,12 +168,10 @@
         let carousel = document.querySelector('.carousel');
         let blocks = carousel.querySelectorAll('.Certificate, .Certificate2, .Certificate3, .Certificate4, .Certificate5, .Certificate6, .Certificate7, .Certificate8');
 
-        // 移除所有區塊的樣式
         blocks.forEach(block => {
             block.classList.remove('active');
         });
 
-        // 獲取被點擊的區塊的索引
         let clickedIndex;
         blocks.forEach((block, index) => {
             if (block === event.currentTarget) {
@@ -183,20 +179,16 @@
             }
         });
 
-        // 獲取中間區塊的索引
         let middleIndex = Math.floor(blocks.length / 2);
 
-        // 添加樣式到中間區塊及其前一個區塊
         if (middleIndex > 0) {
             blocks[clickedIndex].classList.add('active');
         }
 
-        // 取消右側區塊的放大效果
         if (blocks[middleIndex + 1]) {
             blocks[middleIndex + 1].classList.remove('active');
         }
 
-        // 克隆並移動區塊
         let firstBlock = carousel.firstElementChild.cloneNode(true);
         carousel.appendChild(firstBlock);
         carousel.removeChild(carousel.firstElementChild);
