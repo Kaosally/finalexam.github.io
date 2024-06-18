@@ -99,7 +99,6 @@ main a {
 .Portfolio_li {
     font-size: 15px;
     width: calc(20% - 10px);
-    /* 每个元素的宽度为容器的20%减去一些间距 */
     text-align: center;
 }
 
