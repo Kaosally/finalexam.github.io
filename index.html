@@ -11,14 +11,14 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #ccc; /* 灰色背景 */
+            background-color: #ccc;
         }
 
         header {
             position: fixed;
             top: 0;
-            z-index: 1000; /* 设置 z-index 避免被其他内容遮盖 */
-            display: none; /* 初始隐藏导航栏 */
+            z-index: 1000;
+            display: none;
         }
 
         .container-visible {
@@ -29,7 +29,7 @@
             align-items: center;
             overflow: hidden;
             opacity: 1;
-            transition: opacity 1s; /* 添加过渡效果 */
+            transition: opacity 1s;
         }
 
         .container-hidden {
@@ -40,35 +40,35 @@
             align-items: center;
             overflow: hidden;
             opacity: 0;
-            transition: opacity 1s; /* 添加过渡效果 */
+            transition: opacity 1s;
         }
 
         .ball {
             width: 50px;
             height: 50px;
-            background: linear-gradient(to right, #ff5733, #ffbd33, #33ff6d); /* 使用渐变颜色 */
+            background: linear-gradient(to right, #ff5733, #ffbd33, #33ff6d);
             border-radius: 50%;
             position: absolute;
-            animation: roll 4s linear infinite, rotate 4s linear infinite; /* 滚动和旋转动画 */
-            top: 50%; /* 调整球体垂直居中 */
+            animation: roll 4s linear infinite, rotate 4s linear infinite;
+            top: 50%;
             transform: translateY(-50%);
         }
 
         @keyframes roll {
             0% {
-                left: -50px; /* 起始位置在左侧外面 */
+                left: -50px;
             }
             100% {
-                left: calc(100% + 50px); /* 结束位置在右侧外面 */
+                left: calc(100% + 50px);
             }
         }
 
         @keyframes rotate {
             0% {
-                transform: translateY(-50%) rotate(0deg); /* 初始旋转角度为0度 */
+                transform: translateY(-50%) rotate(0deg);
             }
             100% {
-                transform: translateY(-50%) rotate(360deg); /* 结束旋转角度为360度 */
+                transform: translateY(-50%) rotate(360deg);
             }
         }
     </style>
@@ -128,9 +128,9 @@
 
         ball.addEventListener('animationiteration', () => {
             const header = document.querySelector('header');
-            header.style.display = "block"; // 显示导航栏
-            document.querySelector('.container-hidden').style.opacity = "1"; // 将隐藏的内容显示出来
-            ball.style.display = "none"; // 隐藏球体
+            header.style.display = "block";
+            document.querySelector('.container-hidden').style.opacity = "1";
+            ball.style.display = "none";
         });
 
     </script>
