@@ -1,0 +1,137 @@
+#content {
+    width: 980px;
+    margin: auto;
+    background-color: bisque;
+    padding: 40px 40px;
+}
+
+body {
+    font-family: cursive;
+}
+
+hr {
+    width: 200px;
+}
+
+.name {
+    font-size: 2em;
+    color: rgb(20, 134, 134);
+}
+
+.name-h1 {
+    float: right;
+}
+
+.name-h2 {
+    float: right;
+    margin-right: -120px;
+    margin-top: 90px;
+}
+
+.motto {
+    float: right;
+}
+
+.Educational_qualifications {
+    float: right;
+    margin-top: 45px;
+    margin-right: -120px;
+}
+
+.img-size {
+    width: 300px;
+    height: 350px;
+    border-radius: 70%;
+    border: 1px solid #fff;
+    float: left;
+    margin-right: 400px;
+    margin-top: 55px;
+
+}
+
+.li-size {
+    font-size: 30px;
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    display: inline-block;
+}
+
+ul li {
+    list-style-type: none;
+    display: block;
+    width: 220px;
+    text-decoration: none;
+    background-color: rgb(20, 134, 134);
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    padding: 10px;
+}
+
+ul li a:hover {
+    background: #77af66;
+    color: aqua;
+    padding: 10px;
+}
+
+
+.li-a {
+    text-decoration: none;
+}
+
+.Project_title {
+    color: rgb(135, 197, 135);
+    font-size: 35px;
+    font-weight: bold;
+    border: #afe69e double 10px;
+    border-left: #77af66 solid 20px;
+    padding: 5px;
+    text-shadow: 8px 9px 5px #000;
+}
+
+.imgL {
+    float: left;
+    margin-right: 550px;
+    width: 450px;
+    height: 300px;
+}
+
+.imgR {
+    float: right;
+    margin-left: 550px;
+    width: 450px;
+    height: 300px;
+}
+
+.top_width {
+    margin-top: 350px;
+}
+
+dl {
+    text-align: center;
+}
+
+dt {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: green;
+}
+
+dd {
+    font-size: 20px;
+}
+
+footer {
+    margin-left: 800px;
+}
