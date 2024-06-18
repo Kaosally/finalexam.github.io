@@ -22,7 +22,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* 确保图像适应区块大小 */
 }
 
 .Certificate {
@@ -33,9 +32,7 @@
     margin-left: 25px;
     margin-top: 10px;
     position: absolute;
-    /* 將 position 設置為 absolute */
     left: 0;
-    /* 初始 left 值為 0 */
     transition: all 0.5s ease;
 }
 
@@ -48,7 +45,6 @@
     margin-top: 10px;
     position: absolute;
     left: 20px;
-    /* 添加 left 属性并设置初始值 */
     transition: all 0.5s ease;
 }
 
@@ -61,8 +57,6 @@
     margin-top: 10px;
     position: absolute;
     left: 20px;
-    ;
-    /* 添加 left 属性并设置初始值 */
     transition: all 0.5s ease;
 }
 
@@ -293,6 +287,6 @@ h4 {
 }
 
 .Certificate.active, .Certificate2.active, .Certificate3.active {
-    transform: scale(1.1); /* 放大效果 */
-    border: 2px solid #fff; /* 明亮的边框 */
+    transform: scale(1.1);
+    border: 2px solid #fff;
 }
