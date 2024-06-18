@@ -294,24 +294,24 @@ h4 {
 
 .section2 {
     display: flex;
-    justify-content: space-between; /* 水平均分 */
-    align-items: center; /* 垂直居中 */
+    justify-content: space-between;
+    align-items: center;
 }
   
 .img {
-    width: 100%; /* 圖片寬度設置為100% */
-    max-width: 200px; /* 或其他適當的最大寬度 */
+    width: 100%;
+    max-width: 200px;
     margin-top: 30px;
 }
 .img1 {
-    width: 100%; /* 圖片寬度設置為100% */
-    max-width: 200px; /* 或其他適當的最大寬度 */
+    width: 100%;
+    max-width: 200px;
     margin-left: 55px;
     margin-top: 30px;
 }
 .img5 {
-    width: 100%; /* 圖片寬度設置為100% */
-    max-width: 200px; /* 或其他適當的最大寬度 */
+    width: 100%;
+    max-width: 200px;
     margin-right: 55px;
     margin-top: 30px;
 }
