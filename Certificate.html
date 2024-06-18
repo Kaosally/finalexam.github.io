@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        /* 新添加的样式用于放大效果 */
+        .active .top{
+            transform: scale(1.3);
+            z-index: 1;
+        }
+        .active .bottom{
+            transform: scale(1);
+            z-index: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="homepage"><a href="index.html">homepage</a></div>
+            <ul>
+                <li><a href="aboutme.html" class="style">關於我</a></li>
+                <li><a href="Portfolio.html" class="style">作品集</a></li>
+                <li><a href="Certificate.html" class="style">證照</a></li>
+                <li><a href="Activity.html" class="style">參與活動</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100026481011043"><i
+                    class="fa-brands fa-facebook fa-2xl icon" style="color: #3d70c7;"></i></a>
+            <a href="https://www.instagram.com/time_young_/"><i class="fa-brands fa-square-instagram fa-2xl icon"
+                    style="color: #cd32b1;"></i></a>
+            <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord fa-2xl icon"
+                    style="color: #9737d7;"></i></a>
+        </div>
+    </header>
+    <main>
+        <h2>證照</h2>
+
+        <div class="carousel">
+            <!-- Certificate block divs -->
+            <div class="Certificate" id="block1" onclick="moveBlocks()">
+                <a href="#">
+                    <div class="top">
+                        <div class="white">
+                            <img src="img/excel2016.jpg" alt="" class="img">
+                            <h3>Excel 2016</h3>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h4>因為學校出了一點狀況，所以這張是我後來自己練習後去外面考的，這裡面的題目到處都是公式，當初花了多時間才把公式全都記下來。</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="Certificate2" id="block2" onclick="moveBlocks()">
+                <a href="#">
+                    <div class="top">
+                        <div class="white">
+                            <img src="img/Chinese_input_certificate.jpg" alt="" class="img">
+                            <h3>中文輸入證照</h3>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h4>花了很多時間練習，考試中三十二個字是最高成績，很惋惜，只能擦邊拿到進階級，若有機會，我會去外面考專業級。</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="Certificate3" id="block3" onclick="moveBlocks()">
+                <a href="#">
+                    <div class="top">
+                        <div class="white">
+                            <img src="img/word2016.jpg" alt="" class="img">
+                            <h3>Word 2016</h3>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h4>第四類、第五類題目很難，花了很多的時間越來越熟練，考試前我把一到五類全都練過一遍，帶著信心就穩穩地過了。</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="Certificate4" id="block4" onclick="moveBlocks()">
+                <a href="#">
+                    <div class="top">
+                        <div class="white">
+                            <img src="img/Cloud_computing_and_network_services.jpg" alt="" class="img">
+                            <h3>雲端運算及網路服務</h3>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h4>這張是我 TQC 證照裡面唯一一張，透過題庫系統測驗練習的證照，當時放學在車上都會背個二十題左右，抓到時間我就會加把勁背。</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="Certificate5" id="block5" onclick="moveBlocks()">
+                <a href="#">
+                    <div class="top">
+                        <div class="white">
+                            <img src="img/Computer_Software_Application_Level_C.jpg" alt="" class="img">
+                            <h3>電腦軟體應用丙級</h3>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h4>這張是我一年級時，遇到最難考的證照，我還記得，只要每練熟一題，我就會播影片不斷的記憶及複習，檢查我哪些地方做錯。</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="Certificate6" id="block6" onclick="moveBlocks()">
+                <a href="#">
+                    <div class="top">
+                        <div class="white">
+                            <img src="img/Web_Design_Level_C.jpg" alt="" class="img">
+                            <h3>網頁設計丙級</h3>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h4>因為學校電腦教室，有的是新版有的是舊版軟體，所以當時，我只要有時間就會趕快練習，如果是在新版的教室我就會不斷地看影片記憶。</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="Certificate7" id="block7" onclick="moveBlocks()">
+                <a href="#">
+                    <div class="top">
+                        <div class="white">
+                            <img src="img/Computer_Software_Application_Level _B.jpg" alt="" class="img">
+                            <h3>電腦軟體應用乙級</h3>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h4>我喜歡不斷挑戰自己，所以當時我知道這張證照很難考的時候，我十分用心的在準備，寒假的時候每天都會練習(三十分鐘)，就這樣穩穩的過了。</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="Certificate8" id="block8" onclick="moveBlocks()">
+                <a href="#">
+                    <div class="top">
+                        <div class="white">
+                            <img src="img/Korean_language_certificate.jpg" alt="" class="img-s">
+                            <h3>韓語證照</h3>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h4>學了韓文很久了，一直很想要拿到證照證明自己是有能力的，所以在四月份的時候就去考了。希望往後能用韓文和韓國人溝通!變得更好。</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+<script>
+    function moveBlocks() {
+        let carousel = document.querySelector('.carousel');
+        let blocks = carousel.querySelectorAll('.Certificate, .Certificate2, .Certificate3, .Certificate4, .Certificate5, .Certificate6, .Certificate7, .Certificate8');
+
+        // 移除所有區塊的樣式
+        blocks.forEach(block => {
+            block.classList.remove('active');
+        });
+
+        // 獲取被點擊的區塊的索引
+        let clickedIndex;
+        blocks.forEach((block, index) => {
+            if (block === event.currentTarget) {
+                clickedIndex = index;
+            }
+        });
+
+        // 獲取中間區塊的索引
+        let middleIndex = Math.floor(blocks.length / 2);
+
+        // 添加樣式到中間區塊及其前一個區塊
+        if (middleIndex > 0) {
+            blocks[clickedIndex].classList.add('active');
+        }
+
+        // 取消右側區塊的放大效果
+        if (blocks[middleIndex + 1]) {
+            blocks[middleIndex + 1].classList.remove('active');
+        }
+
+        // 克隆並移動區塊
+        let firstBlock = carousel.firstElementChild.cloneNode(true);
+        carousel.appendChild(firstBlock);
+        carousel.removeChild(carousel.firstElementChild);
+    }
+</script>
+
+</body>
+
+</html>

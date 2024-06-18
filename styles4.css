@@ -1,0 +1,298 @@
+.carousel {
+    display: flex;
+    flex-direction: row;
+    max-width: 1244px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    position: relative;
+}
+
+.Certificate.center-block {
+    transform: translateX(-50%) scale(1.2);
+}
+
+.Certificate.left-block {
+    transform: translateX(-75%) scale(1);
+}
+
+
+.block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 确保图像适应区块大小 */
+}
+
+.Certificate {
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+    position: absolute;
+    /* 將 position 設置為 absolute */
+    left: 0;
+    /* 初始 left 值為 0 */
+    transition: all 0.5s ease;
+}
+
+.Certificate2 {
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+    position: absolute;
+    left: 20px;
+    /* 添加 left 属性并设置初始值 */
+    transition: all 0.5s ease;
+}
+
+.Certificate3 {
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+    position: absolute;
+    left: 20px;
+    ;
+    /* 添加 left 属性并设置初始值 */
+    transition: all 0.5s ease;
+}
+
+
+
+
+main {
+    background-image: url(img/starlight.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.white {
+    width: 350px;
+    height: 200px;
+    background-color: yellow;
+    margin-top: 5px;
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    min-height: 86px;
+    background-color: #D4CEE8;
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 137px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.style {
+    text-decoration: none;
+    color: rgb(137, 136, 136);
+    padding-bottom: 10px;
+}
+
+.style:hover {
+    border-bottom: 2px solid orange;
+    color: black;
+    padding-top: 5px;
+}
+
+.icons {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+    margin-top: 26px;
+}
+
+.icon {
+    margin-right: 67px;
+}
+
+.homepage {
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 31px;
+    font-size: 35px;
+    font-weight: 900;
+    z-index: 1000;
+    text-shadow: 5px 3px #bebdbd;
+}
+
+.homepage a {
+    color: black;
+    text-decoration: none;
+}
+
+/*
+.Certificate{
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.Certificate2:hover{
+    background-color: aqua;
+    width: 380px;
+    height: 520px; 
+    border: 10px double rgb(255, 157, 157);
+}*/
+
+.top {
+    /*background-color: aqua;*/
+    height: 60%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.bottom {
+    /* background-color: brown; */
+    height: 40%;
+    margin-top: 46px;
+    width: 364px;
+}
+
+.white {
+    width: 360px;
+    height: 250px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 8px 10px #d7d7d7;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+    color: green;
+    font-weight: 900;
+}
+
+.img {
+    width: 350px;
+    height: 230px;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.img-s {
+    width: 174px;
+    height: 230px;
+    margin-top: 7px;
+    margin-left: 83px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*
+.Certificate2{
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-top: 10px;
+    margin-right: 25px;
+    transition: all 0.5s ease;
+    position: absolute;
+}
+.Certificate3{
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-top: 10px;
+    margin-right: 25px;
+    transition: all 0.5s ease;
+    position: absolute;
+
+}*/
+.Certificate4 {
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.Certificate5 {
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.Certificate6 {
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.Certificate7 {
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.Certificate8 {
+    width: 400px;
+    height: 530px;
+    background-color: rgb(166, 166, 166);
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+#block1,
+#block2,
+#block3 {
+    position: relative;
+}
+
+.Certificate.active, .Certificate2.active, .Certificate3.active {
+    transform: scale(1.1); /* 放大效果 */
+    border: 2px solid #fff; /* 明亮的边框 */
+}

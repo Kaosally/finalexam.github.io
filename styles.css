@@ -1,0 +1,162 @@
+main {
+    background-image: url(img/meteor.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    min-height: 125%; /* 将页面高度设置为100% */
+}
+*{
+    margin: 0;
+}
+nav{
+    width: 100%;
+    min-height: 86px;
+    background-color: #D4CEE8;
+    position: fixed;
+    z-index: 100;
+}
+nav ul{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav li{
+    margin-right: 137px;
+    font-size: 35px;
+    font-weight: 900;
+}
+.style{
+    text-decoration: none;
+    color: rgb(137, 136, 136);
+    padding-bottom: 10px;
+}
+.style:hover{
+    border-bottom: 2px solid orange;
+    color: black;
+    padding-top: 5px;
+}
+.icons{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+    margin-top: 26px;
+}
+.icon{
+    margin-right: 67px;
+}
+.homepage{
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 31px;
+    font-size: 35px;
+    font-weight: 900;
+    z-index: 1000;
+    text-shadow: 5px 3px #bebdbd;
+}
+.homepage a{
+    color: black;
+    text-decoration: none;
+}
+.aside{
+    width: 25%;
+    min-height: 645px;
+    /*background-color: aqua;*/
+    float: left;
+}
+.section{
+    width: 75%;
+    min-height: 645px;
+    float: left;
+    margin-top: 208px;
+}
+.me{
+    width: 200px;
+    height: 250px;
+    border-radius: 70%;
+    margin-top: 397px;
+    margin-left: 50px;
+}
+h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-left: -45px;
+}
+p{
+    text-align: center;
+    margin-top: 15px;
+    margin-left: -44px;
+    font-size: 15px;
+}
+.flex_boxs{
+    width: 1060px;
+    height: 520px;
+    background-color: #D4CEE8;
+    margin: 82px;
+    padding: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container-m{
+    z-index: 1;
+}
+.flex_box{
+    width: 300px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    margin-top: -11px;
+    margin-left: 10px;
+    margin-right: 43px;
+}
+.flex_box2{
+    width: 300px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    margin: -6px 0 -35px 45px;
+    margin-left: 10px;
+    margin-right: 43px;
+}
+.photo{
+    width: 280px;
+    height: 230px;
+    padding: 10px;
+}
+i{
+    color: #B197FC;
+    margin-right: 10px;
+}
+#ball {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: left 4s linear;
+  }
+  
+  #content {
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    transition: right 1s ease-in-out;
+  }
+  
+  #content.show {
+    right: 0;
+    margin-top: 86px; /* 导航栏高度 */
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>front page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ccc; /* 灰色背景 */
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            z-index: 1000; /* 设置 z-index 避免被其他内容遮盖 */
+            display: none; /* 初始隐藏导航栏 */
+        }
+
+        .container-visible {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            opacity: 1;
+            transition: opacity 1s; /* 添加过渡效果 */
+        }
+
+        .container-hidden {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 1s; /* 添加过渡效果 */
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(to right, #ff5733, #ffbd33, #33ff6d); /* 使用渐变颜色 */
+            border-radius: 50%;
+            position: absolute;
+            animation: roll 4s linear infinite, rotate 4s linear infinite; /* 滚动和旋转动画 */
+            top: 50%; /* 调整球体垂直居中 */
+            transform: translateY(-50%);
+        }
+
+        @keyframes roll {
+            0% {
+                left: -50px; /* 起始位置在左侧外面 */
+            }
+            100% {
+                left: calc(100% + 50px); /* 结束位置在右侧外面 */
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: translateY(-50%) rotate(0deg); /* 初始旋转角度为0度 */
+            }
+            100% {
+                transform: translateY(-50%) rotate(360deg); /* 结束旋转角度为360度 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="homepage"><a href="index.html">homepage</a></div>
+            <ul>
+                <li><a href="aboutme.html" class="style">關於我</a></li>
+                <li><a href="Portfolio.html" class="style">作品集</a></li>
+                <li><a href="Certificate.html" class="style">證照</a></li>
+                <li><a href="Activity.html" class="style">參與活動</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100026481011043"><i
+                    class="fa-brands fa-facebook fa-2xl icon" style="color: #3d70c7;"></i></a>
+            <a href="https://www.instagram.com/time_young_/"><i class="fa-brands fa-square-instagram fa-2xl icon"
+                    style="color: #cd32b1;"></i></a>
+            <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord fa-2xl icon"
+                    style="color: #9737d7;"></i></a>
+        </div>
+    </header>
+
+    <div class="container-hidden">
+        <div class="container-visible">
+            <main>
+                <div class="container-m">
+                    <aside class="aside">
+                        <div class="container">
+                            <img src="img/me.jpg" alt="" class="me">
+                        </div>
+                        <h1>高淑慧</h1>
+                        <p><i class="fa-solid fa-location-dot fa-2x" style="color: #7b5bd9;"></i> TAIWAN</p>
+                    </aside>
+                    <section class="section">
+                        <div class="flex_boxs">
+                            <div class="flex_box"><img src="img/friend1-1.jpg" alt="" class="photo"></div>
+                            <div class="flex_box"><img src="img/friend2-1.jpg" alt="" class="photo"></div>
+                            <div class="flex_box"><img src="img/fun.jpg" alt="" class="photo"></div>
+                            <div class="flex_box2"><img src="img/seaside.jpg" alt="" class="photo"></div>
+                            <div class="flex_box2"><img src="img/food.jpg" alt="" class="photo"></div>
+                            <div class="flex_box2"><img src="img/ice.jpg" alt="" class="photo"></div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="ball"></div>
+
+    <script>
+        const ball = document.querySelector('.ball');
+
+        ball.addEventListener('animationiteration', () => {
+            const header = document.querySelector('header');
+            header.style.display = "block"; // 显示导航栏
+            document.querySelector('.container-hidden').style.opacity = "1"; // 将隐藏的内容显示出来
+            ball.style.display = "none"; // 隐藏球体
+        });
+
+    </script>
+</body>
+
+</html>

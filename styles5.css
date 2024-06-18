@@ -1,0 +1,168 @@
+.icons {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+    margin-top: 26px;
+}
+
+.icon {
+    margin-right: 67px;
+}
+
+
+main {
+    background-image: url(img/Los_Angeles.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 150%;
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    min-height: 86px;
+    background-color: #D4CEE8;
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 137px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.style {
+    text-decoration: none;
+    color: rgb(137, 136, 136);
+    padding-bottom: 10px;
+}
+
+.style:hover {
+    border-bottom: 2px solid orange;
+    color: black;
+    padding-top: 5px;
+}
+
+.icons {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+    margin-top: 26px;
+}
+
+.icon {
+    margin-right: 67px;
+}
+
+.homepage {
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 31px;
+    font-size: 35px;
+    font-weight: 900;
+    z-index: 1000;
+    text-shadow: 5px 3px #bebdbd;
+}
+
+.homepage a {
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 218px;
+    font-size: 35px;
+    font-weight: 900;
+    color: #277f12;
+}
+
+.img-1 {
+    width: 253px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 11px;
+}
+.img-2 {
+    width: 253px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 11px;
+}
+.img-3 {
+    width: 253px;
+    height: 230px;
+    margin-left: 10px;
+    margin-top: 11px;
+}
+.img-4 {
+    width: 253px;
+    height: 230px;
+    margin-left: 10px;
+    margin-top: 11px;
+}
+
+.img-div1 {
+    background-color: #ffffff;
+    width: 273px;
+    height: 224px;
+    margin-left: 29%;
+    margin-top: 80px;
+}
+.img-div2 {
+    background-color: #ffffff;
+    width: 273px;
+    height: 224px;
+    margin-left: 54%;
+    margin-top: -224px;
+}
+.img-div3 {
+    background-color: #ffffff;
+    width: 273px;
+    height: 253px;
+    margin-left: 29%;
+    margin-top: 80px;
+}
+.img-div4 {
+    background-color: #ffffff;
+    width: 273px;
+    height: 252px;
+    margin-left: 54%;
+    margin-top: -252px;
+}
+.border1{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.h3-1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.img-div1:hover, .img-div2:hover, .img-div3:hover, .img-div4:hover {
+    transform: scale(1.05);
+}
